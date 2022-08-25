@@ -70,10 +70,13 @@ int main()
     for(int i=0;i<v.size();i++){
         string word = v[i] ;
         Node * node = t->root ;
-        node = node->get(word[0]) ;
+        // node = node->get(word[0]) ;
         bool f1 = 1 ;
         for(int i=0;i<word.size();i++){
+            node = node->get(word[i]) ;
+            
             if(node->flag==false){
+                // cout<<"flag is set to false due to letter "<<word[i]<<"\n";
                 f1 = false;
                 break;
             }
