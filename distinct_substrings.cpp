@@ -66,9 +66,9 @@ int main()
                 // cout<<"ans ++ed when i is "<<i<<" and j is "<<j<<"\n";
                 ans++ ;
             }
-            else{
-                break ;
-            }
+            // else{
+            //     break ;
+            // }
             node =  node->get(s[j]) ;
         }
     }
